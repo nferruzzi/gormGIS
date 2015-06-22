@@ -1,3 +1,4 @@
+// Based on https://github.com/jinzhu/gorm/issues/142
 package gormGIS
 
 import (
