@@ -1,2 +1,6 @@
 # gormGIS
-Add simple interfaces to use PostGIS with gorm library for GO lang
+Add simple types to use PostGIS with library gorm for GO lang
+
+Types supported
+
+- geometry(Geometry,4326)
