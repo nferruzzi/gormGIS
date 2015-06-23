@@ -38,7 +38,7 @@ type TestPoint struct {
 
 func TestGeoPoint(t *testing.T) {
 	if DB.CreateTable(&TestPoint{}) == nil {
-		t.Errorf("Should got error with invalid SQL")
+		t.Errorf("Can't create table")
 	}
 
 	p := TestPoint{
@@ -49,7 +49,7 @@ func TestGeoPoint(t *testing.T) {
 	}
 
 	if DB.Create(&p) == nil {
-		t.Errorf("Should got error with invalid SQL")
+		t.Errorf("Can't create row")
 	}
 
 	var res TestPoint
